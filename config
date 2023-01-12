@@ -206,5 +206,4 @@ exec picom
 exec nitrogen --restore
 exec flameshot
 exec polybar
-#exec --no--startup-id "kill i3bar" 
 exec numlockx &
