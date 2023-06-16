@@ -3,7 +3,6 @@ if status is-interactive
 end
 
 alias config="nvim .config/fish/config.fish"
-alias calc="/home/d179090/cpp/скомпилированное/./calc"
 alias tb="nc termbin.com 9999"
 alias ls="exa --icons -l"
 
