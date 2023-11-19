@@ -199,17 +199,18 @@ smart_borders on
 bindsym $mod+Shift+z       gaps inner all minus 5
 bindsym $mod+Shift+x     gaps inner all plus  5
 
-bindsym $mod+d exec --no-startup-id "sh /home/uhar/.config/rofi/launchers/type-4/launcher.sh" 
+bindsym $mod+d exec --no-startup-id "sh /home/Uhar/.config/rofi/launchers/type-4/launcher.sh" 
 
-bindsym Print exec scrot
+#bindsym Print exec scrot
 #подсветка не активного окна
 for_window [class="^.*"] border pixel 2
 #autostart
-exec --no-startup-id "setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle"
-exec picom
+exec --no-startup-id "sh /home/Uhar/.script/xkb.sh"
+#exec --no-startup-id "setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle"
+exec picom --vsync
 exec nitrogen --restore
-exec flameshot
 exec polybar
 exec numlockx &
 exec --no-startup-id blueberry-tray
-exec --no-startup-id udiskie -a -n 
+exec --no-startup-id udiskie -a -n
+exec --no-startup-id flameshot
