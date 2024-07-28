@@ -13,7 +13,7 @@ alias tb="nc termbin.com 9999"
 alias g="grep"
 alias nf="neofetch"
 alias :q="exit"
-alias pstmux="ps aux | grep tmux"
+alias pstmux="ps aux | g tmux"
 alias ssh-host='ssh $host-ssh -p 22'
 alias freespace='df -h | g /dev/nvme0n'
 
